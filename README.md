@@ -6,7 +6,7 @@ Each project demonstrates a key robotics concept, from reactive motion and path 
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ### 🔹 Project 1: Artificial Potential Fields (APF)
 Path planning and motion control using attractive and repulsive forces.
