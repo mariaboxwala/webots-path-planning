@@ -8,7 +8,7 @@ This project implements a complete **RRT\***-based motion planning system in Web
 
 ---
 
-## 📁 Folder Layout
+## Folder Layout
 
 ```
 .
@@ -28,7 +28,7 @@ This project implements a complete **RRT\***-based motion planning system in Web
 
 ---
 
-## 🧠 Overview
+## Overview
 
 This project extends the RRT* (Rapidly-exploring Random Tree Star) algorithm to a **dynamic world**. The robot continuously replans its path using updated occupancy data from a **supervising controller**, then executes the path using a local **Artificial Potential Field (APF)** controller.
 
@@ -40,42 +40,31 @@ This project extends the RRT* (Rapidly-exploring Random Tree Star) algorithm to 
 
 ---
 
-## 🔍 Algorithms & Components
+## Algorithms & Components
 
-### 🧭 RRT* Path Planning
+### RRT* Path Planning
 - Samples random points in configuration space
 - Connects them into a tree based on obstacle clearance and cost
 - Replans dynamically using an updated occupancy grid
 
-### 💡 Heuristic RRT*
+### Heuristic RRT*
 - Adds **goal biasing** via Gaussian sampling
 - Adjustable probability via `BIAS_PROB`
 - Accelerates convergence in cluttered environments
 
-### 🧱 Supervisor Control
+### Supervisor Control
 - Controls dynamic robots and floor display
 - Publishes robot positions to a JSON file
 - Reads and displays current RRT* graph (nodes + edges)
 
-### 🧲 APF Local Control
+### APF Local Control
 - Uses APF to move robot from current position to RRT* waypoint
 - Combines **attractive and repulsive forces**
 - Handles transitions and collision avoidance in real time
 
 ---
 
-## ▶️ How to Run
-
-1. Open Webots
-2. Load a world from `worlds/`
-3. Select a matching supervisor in `controllers/`
-4. Run the simulation
-
-> 💡 The controller will generate new RRT* graphs and draw them to the ground display in real time.
-
----
-
-## 🎞 Demos
+## Demos
 
 - `1_World_Demo/` – Standard RRT* world with 2 moving obstacles
 - `2_World_Extended_Demo/` – Larger arena with 4 mobile obstacles
@@ -85,7 +74,7 @@ This project extends the RRT* (Rapidly-exploring Random Tree Star) algorithm to 
 
 ---
 
-## 📈 Future Work
+## Future Work
 
 - Use **multi-threading** to separate path planning and control
 - Increase update rate by optimizing RRT* parameters
@@ -93,7 +82,7 @@ This project extends the RRT* (Rapidly-exploring Random Tree Star) algorithm to 
 
 ---
 
-## 📚 References
+## References
 
 - [RosettaCode: A* Algorithm](https://rosettacode.org/wiki/A*_search_algorithm)
 - Webots Documentation: https://cyberbotics.com/doc/

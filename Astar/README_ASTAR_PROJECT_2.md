@@ -8,19 +8,19 @@ This project implements a hierarchical path-planning and reactive control system
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 Project_2_Quadtree_AStar_APF/
-├── Q1_Quadtree_AStar/        # Quadtree spatial breakdown and A* planner
-├── Q2_APF_Waypoint_Navigation/ # Reactive controller using APF
-├── Q3_Hybrid_Controller/     # Fusion of A* planner with APF waypoint controller
-└── README.md
+├── Part 1/     # Quadtree spatial breakdown and A* planner
+├── Part 2/     # Reactive controller using APF
+├── Part 3/     # Fusion of A* planner with APF waypoint controller
+└── README_ASTAR_PROJECT_2.md
 ```
 
 ---
 
-## 🧠 Q1: Quadtree Decomposition + A* Path Planning
+## Part 1: Quadtree Decomposition + A* Path Planning
 
 - Decomposes a 2D Webots world into **quadtree levels** to efficiently represent free vs. obstructed space
 - Waypoints are optimized by **merging adjacent, obstacle-free regions**
@@ -29,11 +29,11 @@ Project_2_Quadtree_AStar_APF/
 - Outputs a sequence of waypoints from **Start → Goal**
 - 5 test scenarios verify different path selections
 
-> ✅ Result: Efficient and safe path planning using hierarchical map abstraction.
+> Result: Efficient and safe path planning using hierarchical map abstraction.
 
 ---
 
-## ⚙️ Q2: APF-Based Reactive Navigation
+## Part 2: APF-Based Reactive Navigation
 
 Implements a classic **Artificial Potential Field (APF)** strategy:
 - **Attractive force** to goal
@@ -41,11 +41,11 @@ Implements a classic **Artificial Potential Field (APF)** strategy:
 - Dynamic adjustment of orientation and speed based on force magnitude
 - Uses IMU + GPS + 8 proximity sensors
 
-> ✅ Result: Robot reliably navigates to goals while avoiding static and dynamic obstacles in real time.
+> Result: Robot reliably navigates to goals while avoiding static and dynamic obstacles in real time.
 
 ---
 
-## 🔀 Q3: Hybrid A* + APF Controller
+## Part 3: Hybrid A* + APF Controller
 
 This controller fuses:
 1. **Deliberative path planning** using A* waypoints (from Q1)
@@ -61,20 +61,11 @@ This controller fuses:
 - A* modified to incorporate average danger into move cost
 - Uses **Chebyshev distance** for flexible and safe routing
 
-> ✅ Result: Robot demonstrates smoother, safer, and more reliable navigation in dynamic, cluttered environments.
+> Result: Robot demonstrates smoother, safer, and more reliable navigation in dynamic, cluttered environments.
 
 ---
 
-## ▶️ How to Run
-
-1. Open Webots
-2. Load any of the `Q1_`, `Q2_`, or `Q3_` world folders
-3. Run the simulation from the controller script
-4. Optionally plot or print path from terminal
-
----
-
-## 🔍 References
+## References
 
 - Rosetta Code A* Template: https://rosettacode.org/wiki/A*_search_algorithm
 - Webots Documentation: https://www.cyberbotics.com/doc/

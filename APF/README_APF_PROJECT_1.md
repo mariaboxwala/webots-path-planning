@@ -4,19 +4,19 @@ This project explores three progressive implementations of the Artificial Potent
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 Project_1_APF/
-├── Q1_Static_Goal/           # Basic APF with goal attraction only
-├── Q2_Obstacle_Avoidance/   # APF with walls, barrels, speed vs safety tuning
-├── Q3_Crowded_Warehouse/    # APF adapted to avoid local minima in cluttered scenes
-└── README.md
+├── Part 1/     # Basic APF with goal attraction only
+├── Part 2/     # APF with walls, barrels, speed vs safety tuning
+├── Part 3/     # APF adapted to avoid local minima in cluttered scenes
+└── README_APF_PROJECT_1.md
 ```
 
 ---
 
-## 🚗 Q1: Static Goal Navigation
+## Part 1: Static Goal Navigation
 
 This scenario implements a **pure attractive force APF**, where the robot navigates to a fixed goal using GPS and IMU data. Features include:
 
@@ -30,7 +30,7 @@ This scenario implements a **pure attractive force APF**, where the robot naviga
 
 ---
 
-## 🧱 Q2: Obstacle Avoidance with Walls & Barrels
+## Part 2: Obstacle Avoidance with Walls & Barrels
 
 This task extends Q1 by adding **repulsive forces** from obstacles (walls, barrels) using 8 proximity sensors.
 
@@ -47,7 +47,7 @@ This task extends Q1 by adding **repulsive forces** from obstacles (walls, barre
 
 ---
 
-## 🏭 Q3: Crowded Warehouse Navigation
+## Part 3: Crowded Warehouse Navigation
 
 This model tackles **local minima issues** in complex obstacle fields by **restricting repulsive force directions**.
 
@@ -61,18 +61,7 @@ This model tackles **local minima issues** in complex obstacle fields by **restr
 
 ---
 
-## 🛠 How to Run
-
-1. Open Webots
-2. Navigate to one of the scenario folders (`Q1_Static_Goal/`, etc.)
-3. Open the `.wbt` world file
-4. Run the simulation
-
-> Adjustments to constants (`k_orientation`, `k_distance`, etc.) can be made in the controller script to observe performance changes.
-
----
-
-## 📚 References
+## References
 
 - Webots Documentation: https://www.cyberbotics.com/doc/guide/epuck
 - Course: CMP 494 – Intelligent Autonomous Robotics

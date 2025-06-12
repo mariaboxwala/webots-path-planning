@@ -7,13 +7,13 @@ This project implements a Finite State Machine (FSM) controller in Webots to sim
 
 ---
 
-## 🤖 Project Overview
+## Project Overview
 
 A robot is equipped with proximity and camera sensors to explore an arena and locate multiple "can" objects. Once all cans are collected (touched), the robot transitions to seeking a fixed base station location. Upon reaching the base, the robot terminates its operation.
 
 ---
 
-## 🧠 Finite State Machine (FSM)
+## Finite State Machine (FSM)
 
 The robot's behavior is governed by a clear FSM with the following states:
 
@@ -32,7 +32,7 @@ The robot's behavior is governed by a clear FSM with the following states:
 
 ---
 
-## ⚙️ Implementation Highlights
+## Implementation Highlights
 
 - Uses a **Boolean array** to track which cans have been touched
 - Implements **back-off + rotate behavior** on obstacle collision
@@ -41,7 +41,7 @@ The robot's behavior is governed by a clear FSM with the following states:
 
 ---
 
-## 📁 Folder Layout
+## Folder Layout
 
 ```
 .
@@ -50,16 +50,8 @@ The robot's behavior is governed by a clear FSM with the following states:
 ├── plugins/                   # Webots plugins if used
 ├── protos/                    # PROTO files for cans/base
 ├── worlds/                    # Webots world file with can/base objects
-└── README.md
+└── README_FSM_PROJECT_4.md
 ```
-
----
-
-## ▶️ Running the Simulation
-
-1. Open Webots
-2. Load the world from the `worlds/` directory
-3. Compile and run the simulation using the FSM controller in `controllers/`
 
 ---
 
@@ -69,14 +61,6 @@ Three tests were run with varying robot start orientations and obstacle layouts.
 - Identifying and touching all cans
 - Transitioning to base-seeking behavior
 - Reaching and stopping at the base
-
----
-
-## 🧩 Robotics Concepts Used
-
-- **FSM (Finite State Machine)** for task sequencing
-- **Logical sensors** to abstract from physical detection (can/base)
-- **Reactive collision handling** for real-world robustness
 
 ---
 
