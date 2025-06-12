@@ -1,0 +1,212 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5733465641272574 0.5676416247774212 0.5908102091395495 2.083065515014001
+  position 0.01730392402113021 -0.021187878589518483 2.209436376048057
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.136 1.136
+  floorTileSize 3 3
+}
+Solid {
+  translation -0.198 -0.29 0.05
+  rotation 0 0 1 1.57
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.071 0.355 0.1
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.071 0.355 0.1
+  }
+}
+Solid {
+  translation 0.385785 -0.0760436 0.05
+  rotation 0 0 -1 0.000795307
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.071 0.071 0.1
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject Box {
+    size 0.071 0.071 0.1
+  }
+}
+Solid {
+  translation 0.382 -0.347 0.05
+  rotation 0 0 1 1.57
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.071 0.071 0.1
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject Box {
+    size 0.071 0.071 0.1
+  }
+}
+Solid {
+  translation -0.198928 -0.217208 0.05
+  rotation 0 0 -1 -1.5700053071795859
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.071 0.071 0.1
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject Box {
+    size 0.071 0.071 0.1
+  }
+}
+Solid {
+  translation -0.157 0.329 0.05
+  rotation 0 0 1 1.57
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.071 0.284 0.1
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject Box {
+    size 0.071 0.284 0.1
+  }
+}
+Solid {
+  translation -0.0517 0.469 0.05
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.071 0.213 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject Box {
+    size 0.071 0.213 0.1
+  }
+}
+Solid {
+  translation -0.34 -0.112 0.05
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.071 0.284 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.071 0.284 0.1
+  }
+}
+Solid {
+  translation -0.269 0.0653 0.05
+  rotation 0 0 1 1.57
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.071 0.213 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.071 0.213 0.1
+  }
+}
+Solid {
+  translation 0.314 -0.191 0.05
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.071 0.426 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.071 0.426 0.1
+  }
+}
+Solid {
+  translation 0.207 0.0567 0.05
+  rotation 0 0 1 1.57
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.071 0.426 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.071 0.426 0.1
+  }
+}
+E-puck {
+  hidden position_0_0 46.89997540245057
+  hidden position_0_1 47.950350028801346
+  hidden rotation_1 0 -0.9999999999999999 0 3.3655070549861197
+  hidden rotation_2 0 -0.9999999999999999 0 2.315132428635346
+  translation -0.47 0.5 -6.3962e-05
+  rotation -2.636926000241158e-10 3.95152395046279e-10 -1 1.9633136138895637
+  controller "Q3"
+  turretSlot [
+    InertialUnit {
+    }
+    GPS {
+    }
+  ]
+  groundSensorsSlot [
+    Pen {
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/OilBarrel.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5729297973769838 -0.5677438353447399 0.591116219288232 4.201372199779867
+  position 0.04255754318149596 0.20389904231094003 3.08232594078039
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.42 1.42
+  floorTileSize 8 8
+}
+E-puck {
+  translation -0.581605 0.571327 -6.3962e-05
+  rotation 1.05413e-08 -3.36899e-09 1 -0.09565530717958648
+  controller "Q2_e_speed"
+  turretSlot [
+    InertialUnit {
+    }
+    GPS {
+    }
+  ]
+  groundSensorsSlot [
+    Pen {
+    }
+  ]
+}
+OilBarrel {
+  translation 0.236 -0.366 0.06
+  height 0.1
+  radius 0.1075
+}
+OilBarrel {
+  translation -0.452 0.15 0.06
+  name "oil barrel(1)"
+  height 0.1
+  radius 0.1075
+}
+OilBarrel {
+  translation 0.1075 0.279 0.06
+  name "oil barrel(2)"
+  height 0.1
+  radius 0.1075
+}

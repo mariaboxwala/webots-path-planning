@@ -1,0 +1,94 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/OilBarrel.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5656222683772885 0.5594186387166925 -0.6059061281849635 2.061836253563956
+  position 0.004131515977570397 0.33946815269617914 3.998801701514554
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.42 1.42
+  floorTileSize 8 8
+}
+E-puck {
+  hidden position_0_0 3.100665040558607e-08
+  hidden position_0_1 3.100662744846e-08
+  hidden linearVelocity_0 6.20947105145255e-06 -2.069256945091152e-05 1.4169808556139597e-08
+  hidden angularVelocity_0 0.0013790353743965292 0.0004138239211661808 2.727338152537773e-11
+  hidden rotation_1 0 1 0 2.9802322387695313e-08
+  hidden linearVelocity_1 8.278397215816707e-06 -2.7587101697549598e-05 2.133644377916338e-11
+  hidden angularVelocity_1 0.0013793323768974352 0.0004139130463136103 2.3732271855437323e-10
+  hidden rotation_2 0 1 0 2.9802322387695313e-08
+  hidden linearVelocity_2 8.278397147840984e-06 -2.758710146794801e-05 2.133537789057858e-11
+  hidden angularVelocity_2 0.0013793323767001086 0.0004139130461821971 -1.8277942057626749e-10
+  translation 0.5562860000284526 0.4810469998526655 -6.394371715104374e-05
+  rotation 0.0006868683914089917 0.0009232413982929825 -0.9999993379183475 1.2792647871702882
+  controller "APF_Q3"
+  turretSlot [
+    InertialUnit {
+    }
+    GPS {
+    }
+  ]
+  groundSensorsSlot [
+    Pen {
+    }
+  ]
+}
+OilBarrel {
+  translation 0.218731 -0.111719 0.06
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation 0.220955 0.0684961 0.06
+  name "oil barrel(7)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation 0.0839297 -0.219902 0.06
+  name "oil barrel(4)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.0947024 -0.218964 0.06
+  name "oil barrel(3)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.314613 -0.0943636 0.06
+  name "oil barrel(1)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.31122 0.0860664 0.06
+  name "oil barrel(2)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.310155 0.265582 0.06
+  name "oil barrel(5)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.464945 0.17839 0.06
+  name "oil barrel(6)"
+  height 0.1
+  radius 0.09
+}

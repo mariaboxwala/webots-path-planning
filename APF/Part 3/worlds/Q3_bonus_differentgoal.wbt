@@ -1,0 +1,88 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/OilBarrel.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5656222683772885 0.5594186387166925 -0.6059061281849635 2.061836253563956
+  position 0.004131515977570397 0.33946815269617914 3.998801701514554
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.42 1.42
+  floorTileSize 8 8
+}
+E-puck {
+  hidden position_0_0 3.100665040558607e-08
+  hidden position_0_1 3.100662744846e-08
+  hidden rotation_1 0 1 0 2.9802322387695313e-08
+  hidden rotation_2 0 1 0 2.9802322387695313e-08
+  translation -0.421536 -0.520843 -6.39437e-05
+  rotation 0.0006868683914089917 0.0009232413982929825 -0.9999993379183475 1.2792647871702882
+  controller "Q3_bonus"
+  turretSlot [
+    InertialUnit {
+    }
+    GPS {
+    }
+  ]
+  groundSensorsSlot [
+    Pen {
+    }
+  ]
+}
+OilBarrel {
+  translation 0.218731 -0.111719 0.06
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation 0.220955 0.0684961 0.06
+  name "oil barrel(7)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation 0.0839297 -0.219902 0.06
+  name "oil barrel(4)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.0947024 -0.218964 0.06
+  name "oil barrel(3)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.314613 -0.0943636 0.06
+  name "oil barrel(1)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.31122 0.0860664 0.06
+  name "oil barrel(2)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.310155 0.265582 0.06
+  name "oil barrel(5)"
+  height 0.1
+  radius 0.09
+}
+OilBarrel {
+  translation -0.464945 0.17839 0.06
+  name "oil barrel(6)"
+  height 0.1
+  radius 0.09
+}
